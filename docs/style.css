@@ -353,7 +353,7 @@ button{
     border-radius: 16px;
     box-shadow: -10px -5px 30px 0px #8D8D8D1A;
 
-    transition: opacity 0.2s ease;
+    transition: all 0.2s ease;
 }
 
 .cookie__modal.active{
@@ -452,3 +452,24 @@ button{
 }
 
 /* HERO END */
+
+/* ABOUT START */
+
+#about {
+    
+}
+
+.container {
+}
+.about__inner {
+}
+.about__content {
+}
+.about__content-text {
+}
+.about__content-grid {
+}
+.about__content-grid__item {
+}
+
+/* ABOUT END */

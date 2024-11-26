@@ -4,9 +4,9 @@ export const cookieModal = () => {
         acceptBtn = document.querySelector('.cookie__btn-accept'),
         declineBtn = document.querySelector('.cookie__btn-decline');
 
-    // setTimeout(() => {
-    //     cookieModal.classList.add('active');
-    // }, 500)
+    setTimeout(() => {
+        cookieModal.classList.add('active');
+    }, 500)
 
     closeBtn.addEventListener('click', () => {
         cookieModal.classList.remove('active');

@@ -4,7 +4,7 @@ import { cookieModal } from "./modules/cookie_modal.js"
 
 window.addEventListener('DOMContentLoaded', () => {
     'use strict'
-    cookieModal()
+    // cookieModal()
     headerTab()
     burger()
 })
