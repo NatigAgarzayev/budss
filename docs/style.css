@@ -38,14 +38,16 @@ button{
 
 .container{
     /* max-width: 1080px; */
-    max-width: 80%;
+    width: 80%;
+    max-width: 1440px;
     /* padding: 0 20px; */
     margin: 0 auto;
 }
 
 .header__container{
     /* max-width: 1040px; */
-    max-width: 80%;
+    width: 80%;
+    max-width: 1440px;
     padding: 0 10px;
     margin: 0 auto;
 }
@@ -480,6 +482,7 @@ button{
 
 .hero__container{
     width: 75%;
+    max-width: 1440px;
     margin: 0 auto;
     height: 100%;
     display: flex;
@@ -1275,6 +1278,7 @@ button{
 }
 .brands__container-2{
     width: 80%;
+    max-width: 1440px;
     padding: 0 10px;
     margin: 0 auto;
 }
@@ -1432,6 +1436,7 @@ button{
 
 .footer__container{
     max-width: 90%;
+    max-width: 1440px;
     margin: 0 auto;
 }
 
