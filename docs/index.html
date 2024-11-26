@@ -8,9 +8,63 @@
     <link rel="stylesheet" href="../fonts/stylesheet.css">
 </head>
 <body>
+    <div class="submit__form">
+        <div class="overlay"></div>
+        <div class="form__content">
+            <div id="contact__close" class="close">
+                <span></span>
+                <span></span>
+            </div>
+            <form class="form__inner">
+                <label for="name">Name <span>*</span></label>
+                <div class="form__input-block required">
+                    <input id="input__name" name="name" type="text" placeholder="Enter name">
+                </div>
+                <span class="err">This field is required.</span>
+                <label for="name">Email <span>*</span></label>
+                <div class="form__input-block required">
+                    <input id="input__email" name="email" type="text" placeholder="Enter email">
+                </div>
+                <span class="err">This field is required.</span>
+                <label for="phone">Phone number <span>*</span></label>
+                <div class="form__phone form__input-block required">
+                    <div>
+                        <img src="../images/+7.svg" alt="code">
+                    </div>
+                    <input id="input__phone" name="phone" type="text" placeholder=" + 1 900 000 00 00 ">
+                </div>
+                <span class="err">This field is required.</span>
+                <label for="phone">Company</label>
+                <div class="form__input-block">
+                    <input id="input__company" name="company" type="text" placeholder="Enter company">
+                </div>
+                <label for="phone">Website/Store URL</label>
+                <div class="form__input-block">
+                    <input id="input__url" name="url" type="text" placeholder="Enter Website/Store URL">
+                </div>
+                <span id="all__err" class="err">Please fill in all required fields</span>
+                <div class="form__agreement">
+                    By submitting this form you are agreeing to Budss's <a href="#">Privacy Policy</a> and <a href="#">Terms of Use</a>
+                </div>
+                <button type="button" class="form__submit-btn btn">
+                    Contact sales
+                </button>
+            </form>
+        </div>
+        <div class="form__success">
+            <div id="success__close" class="close">
+                <span></span>
+                <span></span>
+            </div>
+            <img src="../images/success.svg" alt="success!">
+            <h3>Thank you!</h3>
+            <p>Thank you, we have received your application and will contact you soon!</p>
+            <button class="success__btn btn">Super!</button>
+        </div>
+    </div>
     <div class="cookie__modal">
         <div class="cookie__modal-content">
-            <div class="cookie__close">
+            <div id="cookie__close" class="close">
                 <span></span>
                 <span></span>
             </div>

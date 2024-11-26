@@ -1,6 +1,6 @@
 export const cookieModal = () => {
     const cookieModal = document.querySelector('.cookie__modal'),
-        closeBtn = document.querySelector('.cookie__close'),
+        closeBtn = document.querySelector('#cookie__close'),
         acceptBtn = document.querySelector('.cookie__btn-accept'),
         declineBtn = document.querySelector('.cookie__btn-decline');
 

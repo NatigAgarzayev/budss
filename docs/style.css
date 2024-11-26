@@ -75,6 +75,200 @@ button{
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 100;
 }
+.submit__form{
+    visibility: hidden;
+    opacity: 0;
+}
+
+.submit__form.active{
+    opacity: 1;
+    visibility: visible;
+    overflow: hidden;
+}
+
+.form__content{
+    visibility: hidden;
+    opacity: 0;
+    position: relative;
+    width: 417px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 101;
+    position: absolute;
+    padding: 40px;
+    background-color: var(--white);
+    border-radius: 20px;
+
+    transition: all 0.2s ease;
+}
+
+.form__content.active{
+    visibility: visible;
+    opacity: 1;
+}
+
+.form__inner > label{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 22px;
+    color: #070707;
+    margin-bottom: 4px;
+}
+
+.form__inner > label > span{
+    color: var(--orange);
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+.form__input-block{
+    padding: 0 16px;
+    gap: 10px;
+    border-radius: 14px;
+    border: 1px solid #F1F1F1;
+    overflow: hidden;
+    margin-bottom: 10px;
+    transition: border 0.2s ease;
+}
+.form__input-block > input {
+    font-family: 'Outfit';
+    padding: 10px 0;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.4rem;
+    height: 40px;
+}
+
+.form__input-block.inp__err{
+    border: 1px solid #EC1211;
+}
+
+.form__input-block:has(> input:focus){
+    border: 1px solid var(--gray);
+}
+.form__input-block > input::placeholder {
+    font-family: 'Outfit';
+    font-size: 1.4rem;
+    line-height: 22px;
+}
+
+.form__phone{
+    display: flex;
+    align-items: center;
+}
+
+.form__agreement{
+    margin-top: 20px;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 19.6px;
+}
+
+.form__agreement > a{
+    font-size: 1.4rem;
+    color: var(--purple);
+    font-weight: 300;
+    line-height: 19.6px;
+    text-decoration: underline;
+}
+
+.form__submit-btn{
+    margin-top: 20px;
+}
+
+.close{
+    position: absolute;
+    top: 16px;
+    right: 8px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+}
+
+.close span{
+    background-color: var(--gray);
+    position: absolute;
+    width: 10px;
+    height: 1px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.close span:nth-child(1){
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+}
+.close span:nth-child(2){
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+.err{
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.err.active{
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    color: #EC1211;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.form__success{
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.form__success.active{
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    width: 417px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 102;
+    position: absolute;
+    padding: 40px;
+    background-color: var(--white);
+    border-radius: 20px;
+
+    transition: all 0.2s ease;
+}
+
+.form__success > h3{
+    color: var(--purple);
+    font-size: 3.6rem;
+    font-weight: 600;
+    line-height: 45.36px;
+    text-align: center;
+    
+}
+
+.form__success > p{
+    margin-top: 20px;
+    color: #444;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+}   
+
+.success__btn{
+    margin-top: 20px;
+    width: 100%;
+}
+
 
 /* PATTERN END */
 
@@ -400,32 +594,6 @@ button{
     cursor: pointer;
 }
 
-.cookie__close{
-    position: absolute;
-    top: 16px;
-    right: 8px;
-    width: 26px;
-    height: 26px;
-    cursor: pointer;
-}
-
-.cookie__close span{
-    background-color: var(--gray);
-    position: absolute;
-    width: 10px;
-    height: 1px;
-    border-radius: 8px;
-    transition: all 0.2s ease;
-}
-
-.cookie__close span:nth-child(1){
-    top: 50%;
-    transform: translateY(-50%) rotate(45deg);
-}
-.cookie__close span:nth-child(2){
-    top: 50%;
-    transform: translateY(-50%) rotate(-45deg);
-}
 
 @media(max-width: 991px){
     .cookie__modal-content{
