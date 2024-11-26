@@ -14,39 +14,46 @@ export const contact = () => {
 
     headerBtn.addEventListener('click', () => {
         document.body.style.overflow = "hidden"
+        if(window.innerWidth > 767) document.body.style.paddingRight = "18px"
         modal.classList.add('active')
         successModal.classList.remove('active')
         formContent.classList.add('active')
     })
     heroBtn.addEventListener('click', () => {
         document.body.style.overflow = "hidden"
+        if(window.innerWidth > 767) document.body.style.paddingRight = "18px"
         modal.classList.add('active')
         successModal.classList.remove('active')
         formContent.classList.add('active')
     })
     burgerBtn.addEventListener('click', () => {
         document.body.style.overflow = "hidden"
+        if(window.innerWidth > 767) document.body.style.paddingRight = "18px"
         modal.classList.add('active')
         successModal.classList.remove('active')
         formContent.classList.add('active')
     })
 
     closeBtn.addEventListener('click', () => {
+        if(window.innerWidth > 767) document.body.style.paddingRight = "0"
         document.body.style.overflow = "auto"
         modal.classList.remove('active')
         formContent.classList.remove('active')
     })
     overlay.addEventListener('click', () => {
+        if(window.innerWidth > 767) document.body.style.paddingRight = "0"
         document.body.style.overflow = "auto"
         modal.classList.remove('active')
         formContent.classList.remove('active')
     })
     successClose.addEventListener('click', () => {
+        if(window.innerWidth > 767) document.body.style.paddingRight = "0"
         document.body.style.overflow = "auto"
         modal.classList.remove('active')
         formContent.classList.remove('active')
     })
     successBtn.addEventListener('click', () => {
+        if(window.innerWidth > 767) document.body.style.paddingRight = "0"
         document.body.style.overflow = "auto"
         modal.classList.remove('active')
         formContent.classList.remove('active')
