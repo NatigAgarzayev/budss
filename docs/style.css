@@ -1245,3 +1245,132 @@ button{
     
 }
 /* BRANDS END */
+
+/* FOOTER START */
+#footer{
+    background-color: var(--black);    
+}
+
+.footer__container{
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.footer__inner{
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer__logo > picture:nth-child(2){
+    display: none;
+}
+
+.footer__menu{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.footer__menu-item:nth-child(3), .footer__menu-item:nth-child(4), .footer__menu-item:nth-child(5){
+    display: none;
+}
+
+.footer__menu-item > a{
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 25.2px;
+    position: relative;
+}
+
+.footer__menu-item > a:hover::after{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    width: 100%;
+    left: 0;
+    height: 2px;
+    background-color: var(--white);
+    animation: underline 0.3s 1 ease;
+}
+
+.down__links{
+    display: flex;
+    gap: 20px;
+}
+
+.down__links-item{
+    margin-right: 20px;
+}
+
+.footer__hr{
+    border: 1px solid #444444;
+}
+
+.copyrights {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.copyrights__text {
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 19.6px;
+    color: var(--gray);
+}
+.copyrights__links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.copyrights__links > li > a {
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 19.6px;
+    color: var(--gray);
+    text-decoration: underline !important; 
+}
+
+@media(max-width: 767px){
+    .footer__logo > picture:nth-child(1){
+        display: none;
+    }
+    .footer__logo > picture:nth-child(2){
+        display: block;
+    }
+    .footer__inner{
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .footer__menu{
+        flex-direction: column;
+        align-items: start;
+        gap: 10px;
+    }
+
+    .footer__menu-item:nth-child(3), .footer__menu-item:nth-child(4), .footer__menu-item:nth-child(5){
+        display: block;
+    }
+
+    .down__links{
+        flex-direction: column;
+    }
+
+    .down__links-item:nth-child(1){
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    
+}
+
+@media(max-width: 580px){
+    .copyrights__links{
+        display: none;
+    }
+}
+/* FOOTER END */
