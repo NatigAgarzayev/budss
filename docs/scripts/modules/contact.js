@@ -8,9 +8,23 @@ export const contact = () => {
         successModal = document.querySelector('.form__success'),
         formContent = document.querySelector('.form__content'),
         successClose = document.querySelector('#success__close'),
-        successBtn = document.querySelector('.success__btn')
+        successBtn = document.querySelector('.success__btn'),
+        heroBtn = document.querySelector('.hero__btn'),
+        burgerBtn = document.querySelector('.burger__btn')
 
     headerBtn.addEventListener('click', () => {
+        document.body.style.overflow = "hidden"
+        modal.classList.add('active')
+        successModal.classList.remove('active')
+        formContent.classList.add('active')
+    })
+    heroBtn.addEventListener('click', () => {
+        document.body.style.overflow = "hidden"
+        modal.classList.add('active')
+        successModal.classList.remove('active')
+        formContent.classList.add('active')
+    })
+    burgerBtn.addEventListener('click', () => {
         document.body.style.overflow = "hidden"
         modal.classList.add('active')
         successModal.classList.remove('active')

@@ -89,23 +89,25 @@ button{
 .form__content{
     visibility: hidden;
     opacity: 0;
+    display: none;
     position: relative;
-    width: 417px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 101;
-    position: absolute;
-    padding: 40px;
-    background-color: var(--white);
-    border-radius: 20px;
-
     transition: all 0.2s ease;
 }
 
 .form__content.active{
     visibility: visible;
     opacity: 1;
+    display: block;
+    width: 417px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 103;
+    position: absolute;
+    padding: 40px;
+    background-color: var(--white);
+    border-radius: 20px;
+
 }
 
 .form__inner > label{
@@ -267,6 +269,15 @@ button{
 .success__btn{
     margin-top: 20px;
     width: 100%;
+}
+
+@media(max-width: 480px){
+    .form__content.active{
+        width: 90%;
+    }
+    .form__success.active{
+        width: 90%;
+    }
 }
 
 
